@@ -10,7 +10,7 @@ export const getApiBaseUrl = () => {
   ) {
     return envUrl;
   }
-  return `http://localhost:5000/api`;
+  return `http://65.0.106.249:5000/api`;
 };
 
 const API_BASE_URL = getApiBaseUrl();
@@ -19,7 +19,7 @@ const API_BASE_URL = getApiBaseUrl();
 console.log("API_BASE_URL:", API_BASE_URL);
 
 if (!import.meta.env.VITE_API_URL || import.meta.env.VITE_API_URL === "undefined") {
-  console.warn("VITE_API_URL is not set, using default: http://localhost:5000/api");
+  console.warn("VITE_API_URL is not set, using default: http://65.0.106.249:5000/api");
 }
 
 class TaskService {
